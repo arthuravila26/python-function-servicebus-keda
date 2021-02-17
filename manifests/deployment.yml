@@ -1,0 +1,28 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: <pod-name>
+  namespace: <namespace>
+  labels:
+    app: <pod-name>
+spec:
+  selector:
+    matchLabels:
+      app: <pod-name>
+  template:
+    metadata:
+      labels:
+        app: <pod-name>
+    spec:
+      containers:
+        - image: arthuravila/keda-container
+          name: keda-container
+          ports:
+          - containerPort: 80
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "128Mi"
+              cpu: "250m"

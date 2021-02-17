@@ -11,7 +11,7 @@ queue = ServiceBusClient.from_connection_string(conn_str=connection_string, queu
 
 
 def send_a_list_of_messages(sender):
-    messages = [ServiceBusMessage("Message in list") for _ in range(150)]
+    messages = [ServiceBusMessage("Message in list") for _ in range(100)]
     sender.send_messages(messages)
     logger.info("Sent a list of 100 messages")
 

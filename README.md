@@ -3,6 +3,7 @@
 A simple Python Azure Functions sample that autoscaling automatically when an event arrives 
 in a queue on Azure ServiceBus using [Keda](https://keda.sh) and deploying on AKS.
 This samples has as base the sample made by [tomconte](https://github.com/tomconte/sample-keda-queue-jobs).
+I just wrote 2 articles explaining with more details. Check it out on [Medium](https://arthurvila.medium.com/azure-functions-running-on-kubernetes-using-keda-4a30205cdc32) and Dev.to(https://dev.to/arthuravila26/azure-functions-running-on-kubernetes-using-keda-2pi5).
 
 ## Pre-requisites
 
